@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         RVRB notifications
 // @namespace    http://tampermonkey.net/
-// @version      1.1
+// @version      1.2
 // @description  Send push notifications when someone mentions you.
 // @author       Julian Vos
 // @match        https://app.rvrb.one/channel/*
