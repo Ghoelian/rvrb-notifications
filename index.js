@@ -5,7 +5,7 @@
 // @description  Send push notifications when someone mentions you.
 // @author       Julian Vos
 // @match        https://app.rvrb.one/channel/*
-// @icon         https://www.google.com/s2/favicons?sz=64&domain=rvrb.one
+// @icon         https://app.rvrb.one/favicon.ico
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/Ghoelian/rvrb-notifications/master/index.js
 // @updateURL    https://raw.githubusercontent.com/Ghoelian/rvrb-notifications/master/index.js
