@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name         RVRB notifications
 // @namespace    http://tampermonkey.net/
-// @version      1.2
+// @version      1.3
 // @description  Send push notifications when someone mentions you.
 // @author       Julian Vos
 // @match        https://app.rvrb.one/channel/*
-// @icon         https://app.rvrb.one/favicon.ico
+// @icon         https://www.google.com/s2/favicons?sz=64&domain=rvrb.one
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/Ghoelian/rvrb-notifications/master/index.js
 // @updateURL    https://raw.githubusercontent.com/Ghoelian/rvrb-notifications/master/index.js
@@ -46,10 +46,13 @@
                                     for (let j = 0; j < node.children[i].children.length; j++) {
                                         for (let k = 0; k < node.children[i].children[j].classList.length; k++) {
                                             if (node.children[i].children[j].classList[k] === 'username') {
-                                                console.log(node.children[i].innerText);
-                                                new Notification('RVRB', {
-                                                    body: node.children[i].innerText
-                                                });
+                                                const computedStyle = window.getComputedStyle(node.children[i].children[j], null);
+
+                                                if (computedStyle.getPropertyValue("background-color") === 'rgb(33, 133, 208)') {
+                                                    new Notification('RVRB', {
+                                                        body: node.children[i].innerText
+                                                    });
+                                                }
                                             }
                                         }
                                     }
