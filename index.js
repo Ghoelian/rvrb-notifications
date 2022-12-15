@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         RVRB notifications
 // @namespace    http://tampermonkey.net/
-// @version      1.4
+// @version      1.5
 // @description  Send push notifications when someone mentions you.
 // @author       Julian Vos
-// @match        https://app.rvrb.one/channel/*
+// @match        https://app.rvrb.one/*
 // @icon         https://app.rvrb.one/favicon.ico
 // @grant        none
 // @downloadURL  https://raw.githubusercontent.com/Ghoelian/rvrb-notifications/master/index.js
